@@ -1,0 +1,488 @@
+.navbar,
+.dropdown-menu {
+    background-color: rgba(41, 97, 86, 255);
+    --bs-dropdown-link-hover-bg: none;
+    --bs-dropdown-link-hover-color: #fff76b;
+}
+
+.navbar {
+    --bs-navbar-hover-color: #fff76b;
+    --bs-navbar-brand-color: white;
+    --bs-navbar-brand-hover-color: #fff76b;
+    --bs-navbar-color: white;
+    border: 1px solid #fff76b;
+
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar-nav .nav-link.show {
+    color: #fff76b;
+    ;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.navbar-toggler {
+
+    color: #fff76b;
+    font-size: 2rem;
+
+}
+
+.navbar-brand {}
+
+.food {
+    background-image: url(images/_8a81cc25-5537-4365-96fb-a979547835c8.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+
+.banner-about-us {
+    background-image: url(images/image-bing-ai.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 180px;
+    padding-bottom: 20px;
+
+}
+
+.banner-contact {
+    background-image: url(images/_29f2c696-042e-4542-b226-fc7ecc028af2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 180px;
+    padding-bottom: 20px;
+
+}
+
+.banner {
+    /*background-image: url(images/spiegel.png);*/
+    background-size: cover;
+    background-color: #1d1d1d;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    padding-top: 110px;
+    padding-bottom: 20px;
+
+}
+
+.container-for-grid-system {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+
+}
+
+.experiment {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+.pic-of-logo {
+    width: 250px;
+    height: 150px;
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+    opacity: 0.9;
+    border: 2px solid #FFC300;
+    border-radius: 15px;
+    /*margin-bottom: 20px;
+   
+    margin-top: 25px;
+    max-width: 90%;*/
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.speisen {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.welcome {
+    color: white;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(41, 97, 86, 255);
+
+    border-radius: 50px;
+    border: 2px solid #FFC300;
+    opacity: 0.9;
+    /*margin-right: auto;
+    margin-left: auto;
+    max-width: 70%;
+
+    hyphens: auto;*/
+
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-weight: bold;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  
+    margin: auto;
+*/
+    margin-top: 30px;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+
+}
+
+body {
+    background: radial-gradient(circle, #fbe456 50%, #e3b333, #a46f13);
+}
+
+.card {
+    box-shadow: 8px 8px 15px #1e1b1b;
+}
+
+.pdf-pic {
+    height: 80px;
+    width: 80px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pdf-text {
+
+    color: #fff;
+    animation: glow 1.5s infinite alternate;
+
+    font-style: oblique;
+    font-weight: bold;
+}
+
+@media (max-width:152px) {
+    .pdf-text.fs-3 {
+        font-size: 12vw !important;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff4d4d, 0 0 10px #ff4d4d, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000, 0 0 30px #ff0000, 0 0 35px #ff0000;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+}
+
+.card-body {
+    background: radial-gradient(circle, #fbe456 50%, #e3b333, #a46f13);
+}
+
+.pic1 {
+    width: 150px;
+
+}
+
+.pic2 {
+    width: 170px;
+
+}
+
+
+
+@media (max-width:276px) {
+    .welcome-text {
+        font-size: 13vw;
+    }
+}
+
+.introduction-text {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+.contact {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 2px black;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.contact-text {
+    font-size: 18px;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.food-text {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.form-text {
+
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+@media (max-width:288px) {
+
+    .form-text,
+    .btn {
+        font-size: 7vw !important;
+    }
+
+}
+
+.linie {
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(41, 97, 86, 0.95);
+    position: relative;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+    backdrop-filter: blur(2px);
+}
+
+.linie::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/_b0563ee9-9db0-427a-b93f-467d3c5689dc.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    /* Sanfter Blend-Mode für subtile Effekte */
+    opacity: 0.1;
+    /* Bild ist fast unsichtbar, nur als Textur */
+    z-index: -1;
+    /* Bild im Hintergrund */
+    border-radius: 10px;
+    /* Gleiche Abrundung */
+}
+
+@media (min-width:0px) and (max-width:767px) {
+
+    .pic1,
+    .pic2 {
+        height: 30%;
+        width: 30%;
+    }
+
+    .pic-of-logo {
+        height: 20%;
+        width: 50%;
+    }
+}
+
+
+@media (min-width:0px) and (max-width:235px) {
+    .banner {
+        height: 50vh;
+    }
+
+    .welcome-text {
+        height: 5vh;
+        font-size: 10vw;
+    }
+}
+
+cite {
+    color: #1a3f25;
+}
+
+figcaption {
+    color: #1a3f25 !important;
+}
+
+.bi-heart-fill {
+    color: #d83144 !important;
+    font-style: italic !important;
+}
+
+
+label.error {
+
+    border-radius: 5px;
+    color: yellow;
+    margin-top: 5px;
+    /* Abstand zum Eingabefeld */
+
+}
+
+.impressum-banner {
+    position: relative;
+
+
+    max-width: 100%;
+    margin: auto;
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+    background-color: #1e1b1b;
+    /* Sehr deckend, fast nur noch leichte Transparenz */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  
+    /* Leichter Schatten für Tiefe */
+    z-index: 1;
+    /* Der Inhalt bleibt oben */
+    backdrop-filter: blur(2px);
+    /* Ganz leichte Weichzeichnung */
+
+
+
+}
+
+.impressum-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    /* Sanfter Blend-Mode für subtile Effekte */
+    opacity: 0.1;
+    /* Bild ist fast unsichtbar, nur als Textur */
+    z-index: -1;
+    /* Bild im Hintergrund */
+
+    /* Gleiche Abrundung */
+    background-image: url(images/_c7babf05-0a5e-41b8-958c-40ff216e345b.jpeg);
+
+}
+
+.impressum {
+    margin-top: 80px;
+}
+
+.impressum-daten {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    border: 1px solid black;
+    background-color: #F0FFFF;
+    max-width: 100%;
+    margin: auto;
+}
+
+footer>a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    background-color: rgba(41, 97, 86, 255);
+    border: #fff76b solid 1px;
+    max-width: 100%;
+    margin: auto;
+    
+
+}
+
+footer>a:hover {
+    text-decoration: underline #fff76b;
+
+}
+.ki-bild{
+
+}
+.ki-bild::before:hover {
+
+}
+
+
+
+#port{
+    background-image: url(images/portfolio-backgr.jpg);
+}
+
+.menu-item-portfolio{
+    background: black;
+    color: white;
+
+}
+
+.menü {
+    list-style: none;
+    padding-left: 0px;
+
+}
+.menü>li>a{
+    text-decoration: none;
+    color: white;
+  
+}
+.menü>li{
+    border-top: 1px solid white;  
+    padding: 20px;
+}
+.menü>li>a:hover {
+    color: yellow;
+}
