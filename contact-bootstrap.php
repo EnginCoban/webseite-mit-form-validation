@@ -9,7 +9,7 @@ $messageValue = '';
 $emailValue = '';
 $checked = '';
 $alertRecaptcha = '';
-#$recaptchaValue = '';
+
 if (isset($_SESSION['alertEmail'])) {
     $alertEmail = $_SESSION['alertEmail'];
 }
@@ -33,9 +33,7 @@ if (isset($_SESSION['messageValue'])) {
 if (isset($_SESSION['alertRecaptcha'])) {
     $alertRecaptcha = $_SESSION['alertRecaptcha'];
 }
-/*if (isset($_SESSION['recaptchaValue'])) {
-    $recaptchaValue = $_SESSION['recaptchaValue'];
-}*/
+
 session_unset();
 $_SESSION['alertPolicy'] = '';
 
@@ -70,12 +68,12 @@ $_SESSION['alertPolicy'] = '';
             <h1 class="text-center speisen display-1">Kontakt</h1>
         </div>
     </div>
+
     <div class="container ">
+
         <div class="row mt-4 mb-4 fs-5 form-text  mx-1 ">
             <div class="col-12 linie">
                 <form action="send-mail.php" method="POST" id="contactForm" class="p-2">
-
-
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Email-addresse*</label>
@@ -107,28 +105,20 @@ $_SESSION['alertPolicy'] = '';
                         <label class="form-check-label text-break mb-2" for="privacyPolicy">*Ich stimme der <a class="policy" style="color: white; text-decoration : none;" href="policy.php">Datenschutzerklärung</a>
                             zu</label>
                         <?= $alertPolicy; ?>
-                        <!-- <div class="g-recaptcha" data-sitekey="6Ld1V7YqAAAAADTEc1VYSHMFpX_IAC4DjLfXEus4"></div>
                         <?= $alertRecaptcha; ?>
-                        <div id="recaptcha"></div>-->
                     </div>
 
                     <button type="submit" class="btn btn-primary " name="submit" id="submit">senden</button>
 
                 </form>
-
-
-
             </div>
-
         </div>
+
         <div class="row ">
             <div class=" col-12 col-lg-6 ">
                 <img src="images/map-bild.png" class="w-100 h-100" alt="">
-                <!-- <iframe class="w-100  "
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.6163689331675!2d9.19317431141729!3d48.78921380545337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c5865efb1da3%3A0xf43c13f2c9483f3b!2sFoodstation!5e0!3m2!1sde!2sde!4v1699149590797!5m2!1sde!2sde"
-                    style="border:0; height: 100%;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>-->
             </div>
+
             <div class="col-lg-6 ps-4 mt-3 mt-sm-3 mt-md-3 mt-lg-0 mt-xl-0 mt-xxl-0  lh-lg contact-text text-break  ">
                 <div class="row">
                     <div class="col-12 col-md-6 me-md-5 ">
@@ -137,17 +127,10 @@ $_SESSION['alertPolicy'] = '';
                         <div class="row">mit dem Bus: 43, SEV2, U1B, N5, N7.</div>
                         <div class="row">mit der S-Bahn: S5, RE, RE3.</div>
                         <div class="row">mit der Straßenbahn: U8. </div>
-
-
-
-
                     </div>
                     <div class="col ">
                         <div class="row fw-bold mt-4 mt-md-0"> Email</div>
-                        <div class="row"> Maxmustermann
-                            @gmail.com</div>
-
-
+                        <div class="row"> Maxmustermann@gmail.com</div>
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -169,15 +152,9 @@ $_SESSION['alertPolicy'] = '';
                         <div class="row">0711 329832</div>
                     </div>
                 </div>
-
-
             </div>
 
         </div>
-
-
-
-
 
     </div>
 
@@ -213,73 +190,12 @@ $_SESSION['alertPolicy'] = '';
                 privacyPolicy: "Bitte akzeptieren Sie die Datenschutzerklärung."
             },
             submitHandler: function(form) {
-                /*alert("Formular wurde erfolgreich validiert!");*/
+                alert("Nachricht wurde gesendet!");
                 form.submit(); // Optional: Standardformular senden
             }
         });
     </script>
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let form = document.getElementById("contactForm");
 
-            form.addEventListener("submit", function(event) {
-
-                let captchaResponse = document.getElementById("g-recaptcha-response");
-
-                
-               
-                // ... [weitere Validierungslogik hier] ...
-
-                if (!captchaResponse.value) {
-                    event.preventDefault();
-                    document.getElementById("recaptcha").innerHTML= "Recaptcha ist ein Pflichtfeld!";
-                    document.getElementById("recaptcha").style.color = "yellow";
-                    
-                }
-
-          
-                else{
-                    document.getElementById("recaptcha").innerHTML = "";
-                    console.log("geh weg");
-                }
-            });
-        });
-    </script>-->
-    <!--<script>
-            let jsToogler = document.getElementById("jsToggler");
-            let js = true;
-            jsToggler.onclick = function(){
-                js = !js;
-                if (js == true) {
-                    $("#contactForm").validate({
-            rules: {
-                email: {
-                    required: true,
-                    email: true,
-                },
-                message: {
-                    required: true,
-                },
-                privacyPolicy: {
-                    required: true,
-                }
-            },
-            messages: {
-                email: "Bitte eine gültige Email eingeben.",
-                message: "Nachricht darf nicht leer sein.",
-                privacyPolicy: "Bitte akzeptieren Sie die Datenschutzerklärung."
-            },
-            submitHandler: function(form) {
-                /*alert("Formular wurde erfolgreich validiert!");*/
-                form.submit(); // Optional: Standardformular senden
-            }
-        });
-                }else {
-                    jsToggler.value = "PHP is active";
-            }
-            }
-            
-        </script>-->
 </body>
 
 </html>
