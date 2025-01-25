@@ -34,7 +34,7 @@
 
 }
 
-.navbar-brand {}
+
 
 .food {
     background-image: url(images/_8a81cc25-5537-4365-96fb-a979547835c8.jpeg);
@@ -72,7 +72,7 @@
 }
 
 .banner {
-    /*background-image: url(images/spiegel.png);*/
+
     background-size: cover;
     background-color: #1d1d1d;
 
@@ -104,16 +104,11 @@
 .pic-of-logo {
     width: 250px;
     height: 150px;
-    /*display: block;
-    margin-left: auto;
-    margin-right: auto;*/
+
     opacity: 0.9;
     border: 2px solid #FFC300;
     border-radius: 15px;
-    /*margin-bottom: 20px;
-   
-    margin-top: 25px;
-    max-width: 90%;*/
+
     margin-bottom: 20px;
     padding: 0;
 }
@@ -138,11 +133,7 @@
     border-radius: 50px;
     border: 2px solid #FFC300;
     opacity: 0.9;
-    /*margin-right: auto;
-    margin-left: auto;
-    max-width: 70%;
 
-    hyphens: auto;*/
 
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -150,13 +141,7 @@
     font-style: normal;
     font-weight: bold;
 
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  
-    margin: auto;
-*/
+
     margin-top: 30px;
 }
 
@@ -379,7 +364,7 @@ label.error {
     color: white;
     text-align: center;
     padding: 20px;
-  
+
     /* Leichter Schatten für Tiefe */
     z-index: 1;
     /* Der Inhalt bleibt oben */
@@ -442,7 +427,7 @@ footer {
     border: #fff76b solid 1px;
     max-width: 100%;
     margin: auto;
-    
+
 
 }
 
@@ -450,20 +435,15 @@ footer>a:hover {
     text-decoration: underline #fff76b;
 
 }
-.ki-bild{
-
-}
-.ki-bild::before:hover {
-
-}
 
 
 
-#port{
+
+#port {
     background-image: url(images/portfolio-backgr.jpg);
 }
 
-.menu-item-portfolio{
+.menu-item-portfolio {
     background: black;
     color: white;
 
@@ -474,15 +454,18 @@ footer>a:hover {
     padding-left: 0px;
 
 }
-.menü>li>a{
+
+.menü>li>a {
     text-decoration: none;
     color: white;
-  
+
 }
-.menü>li{
-    border-top: 1px solid white;  
+
+.menü>li {
+    border-top: 1px solid white;
     padding: 20px;
 }
+
 .menü>li>a:hover {
     color: yellow;
 }
