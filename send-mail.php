@@ -121,7 +121,7 @@ if (isset($_POST['submit'])) {
 
             // Empfänger
             $mail->setFrom($safeEmail, $safeName);
-            $mail->addAddress('enginstgt@gmail.com', 'Engin');
+            $mail->addAddress(include 'username.php', 'Engin');
             
             // Inhalt der E-Mail
             $mail->isHTML(true);
