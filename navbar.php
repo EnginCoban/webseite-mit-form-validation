@@ -11,7 +11,7 @@
 
 
             <ul class="navbar-nav mt-2 mt-lg-0 gap-3 justify-content-between  ">
-                
+
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="about-us-bootstrap.php">Über uns</a>
                 </li>
@@ -29,17 +29,9 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="food-bootstrap-uebungen.php#pdf">Speisekarte</a></li>
-                        <!-- <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="https://www.lieferando.de/speisekarte/foodstation-neckarstrasse">Online
-                                    bestellen</a></li>-->
                     </ul>
                 </li>
-                <!--  <li class="nav-item">
-                        <a class="nav-link" href="contact-bootstrap.html">Kontakt</a>
-                    </li>-->
+
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
