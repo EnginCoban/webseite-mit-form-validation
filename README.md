@@ -46,7 +46,7 @@ Um Nachrichten zu versenden, wird **PHP-Mailer** verwendet. Dieser sorgt dafür,
    - Stelle sicher, dass der SMTP-Server und Port korrekt sind (z.B. `smtp.gmail.com` und Port `587`).
    - Falls du Gmail verwendest, stelle sicher, dass du die 2-Faktor-Authentifizierung aktivierst und ein App-Passwort für den Zugriff auf dein Gmail-Konto erstellst.
 
-8. Öffne contact.php im Browser, um das Kontaktformular anzuzeigen.
+8. Öffne `contact.php` im Browser, um das Kontaktformular anzuzeigen.
 
 9. Fülle das Formular aus und klicke auf "senden". Wenn alle Pflichtfelder korrekt ausgefüllt sind, wird die Nachricht über PHP-Mailer an den definierten Empfänger gesendet.
    
