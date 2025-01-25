@@ -40,9 +40,13 @@ Um Nachrichten zu versenden, wird **PHP-Mailer** verwendet. Dieser sorgt dafür,
    ```bash
    composer install
     
-6. Passe die Konfiguration für PHP-Mailer an. Öffne die Datei config.php und trage deine SMTP-Einstellungen ein (z.B. SMTP-Server, Port, Benutzername und Passwort).
+6. Passe die Konfiguration für PHP-Mailer an:
+   - Öffne die Datei `username.php` und trage deinen SMTP-Benutzernamen ein.
+   - Öffne die Datei `password.php` und trage dein SMTP-Passwort ein.
+   - Stelle sicher, dass der SMTP-Server und Port korrekt sind (z.B. `smtp.gmail.com` und Port `587`).
+   - Falls du Gmail verwendest, stelle sicher, dass du die 2-Faktor-Authentifizierung aktivierst und ein App-Passwort für den Zugriff auf dein Gmail-Konto erstellst.
 
-7. Öffne contact.php im Browser, um das Kontaktformular anzuzeigen.
+8. Öffne contact.php im Browser, um das Kontaktformular anzuzeigen.
 
-8. Fülle das Formular aus und klicke auf "senden". Wenn alle Pflichtfelder korrekt ausgefüllt sind, wird die Nachricht über PHP-Mailer an den definierten Empfänger gesendet.
+9. Fülle das Formular aus und klicke auf "senden". Wenn alle Pflichtfelder korrekt ausgefüllt sind, wird die Nachricht über PHP-Mailer an den definierten Empfänger gesendet.
    
