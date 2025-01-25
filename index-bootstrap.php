@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +24,7 @@
 
 <body>
 
-<?php include'navbar.php'; ?>
+    <?php include 'navbar.php'; ?>
     <div class="container-fluid banner  ">
         <div class="container ">
             <div class="row ">
@@ -52,7 +50,7 @@
     <div class="container ">
         <div class="row text-center mx-auto  mt-2 lh-lg">
             <figcaption class="blockquote-footer introduction-text fs-5  text-break fw-bold ">
-                <cite title="Source Title">„Entdecke die kulinarische Vielfalt direkt im    <i class="bi bi-heart-fill "></i>  von Stuttgart"</cite>
+                <cite title="Source Title">„Entdecke die kulinarische Vielfalt direkt im <i class="bi bi-heart-fill "></i> von Stuttgart"</cite>
             </figcaption>
             <br>
 
@@ -61,29 +59,21 @@
                 Börek bis
                 hin
                 zu würzigem Lahmacun und erfrischenden Salatbowls.
-                <!--Unsere Selbstbedienungssektion bietet dir die Freiheit, deine Favoriten zu wählen.-->
-                <!-- Ob unsere beliebten Veggie Burger oder ein erfrischender Softdrink ein leckeres Dessert – hier ist für jeden etwas dabei.-->
+
                 <br>Ob herzhaftes Essen wie unsere beliebten Veggie Burger oder süße Desserts – hier ist für jeden etwas
                 dabei.
 
-               <!--<br>Jedes Gericht wird mit Liebe und Leidenschaft zubereitet, um dir ein unvergessliches
-                Geschmackserlebnis
-                zu bieten.-->
+
 
                 <br>
                 Wir freuen uns, dich bald bei uns begrüßen zu dürfen und wünschen guten Appetit!
             </p>
         </div>
-        <!--<div class="row mt-5  ">
 
-
-
-            <div class="elfsight-app-faf84ad5-12da-4c26-b881-41e045ae006c" data-elfsight-app-lazy></div>
-        </div>-->
     </div>
 
 
-   <?php include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
