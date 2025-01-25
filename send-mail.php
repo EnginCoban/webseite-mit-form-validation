@@ -45,7 +45,6 @@ if (isset($_POST['submit'])) {
     $message = trim($_POST['message']);
     $subject = trim($_POST['subject']);
     $name = trim($_POST['name']);
-    #$recaptcha = $_POST['6Ld1V7YqAAAAADTEc1VYSHMFpX_IAC4DjLfXEus4'];
     $error  = false;
     $errorMessages = [
         '<div class="alert alert-danger text-break text-center  m-0" role="alert">Email ist ein Pflichtfeld!</div>',
@@ -54,14 +53,11 @@ if (isset($_POST['submit'])) {
         '<div class="alert alert-danger text-break text-center  m-0" role="alert">Datenschutz ist ein Pflichtfeld!</div>',
          '<div class="alert alert-danger text-break text-center  m-0" role="alert">Recaptcha ist ein Pflichtfeld!</div>'
     ];
-    #Prüfung ob das Email Feld leer ist, falls ja wird Error ausgegeben
+   
     if (empty($email)) {
-
         $error = true;
         $_SESSION['alertEmail'] = $errorMessages[0];
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        #echo '<div class="alert alert-danger text-break text-center display-6 m-0" role="alert">Falsche E-Mail-Formatierung!</div>';
-        #echo '<div class="d-grid col-12 mx-auto"><a class="btn btn-dark text-break  role="button"  href="contact-bootstrap.php">zurück</a></div>';
         $error = true;
         $_SESSION['alertEmail'] = $errorMessages[1];
     } else {
@@ -82,15 +78,8 @@ if (isset($_POST['submit'])) {
 
         $_SESSION['privacyPolicy'] = 'checked';
     }
-    /*if (!isset($_POST['6Ld1V7YqAAAAADTEc1VYSHMFpX_IAC4DjLfXEus4'])) {
-        $error = true;
-        $_SESSION['alertRecaptcha'] = $errorMessages[4];
-    }
-    else{
-        $_SESSION['recaptchaValue'] = $recaptcha;
-    }*/
+ 
     if ($error) {
-        #isset($_SESSION['alertEmail']) || isset($_SESSION['alertMessage']) || isset($_SESSION['alertPolicy'])
         header('Location: contact-bootstrap.php');
         exit();
     }
@@ -98,7 +87,7 @@ if (isset($_POST['submit'])) {
     // Wenn Felder nicht leer sind, dann E-Mail validieren
     else {
 
-        // Wenn alles okay ist, sichere die Eingabewerte
+        // Eingabewerte sichern
         $safeEmail = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
         $safeMessage = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
         $safeName = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
