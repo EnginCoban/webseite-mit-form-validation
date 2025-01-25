@@ -190,8 +190,7 @@ $_SESSION['alertPolicy'] = '';
                 privacyPolicy: "Bitte akzeptieren Sie die Datenschutzerklärung."
             },
             submitHandler: function(form) {
-                alert("Nachricht wurde gesendet!");
-                form.submit(); // Optional: Standardformular senden
+                form.submit(); //Formular senden
             }
         });
     </script>
