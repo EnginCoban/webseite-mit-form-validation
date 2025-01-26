@@ -88,13 +88,6 @@
 
 
 
-.experiment {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: dodgerblue;
-    padding: 10px;
-}
-
 .pic-of-logo {
     width: 250px;
     height: 150px;
