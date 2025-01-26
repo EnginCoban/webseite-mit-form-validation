@@ -37,7 +37,7 @@ Um Nachrichten zu versenden, wird **PHP-Mailer** verwendet. Dieser sorgt dafür,
 
 3. **Composer installieren** (falls noch nicht installiert):
 
-   Lade Composer hier herunter und installiere es.
+   Lade Composer <a href="https://getcomposer.org/">hier</a> herunter und installiere es.
 
 4. **PHP-Mailer installieren:**
 
