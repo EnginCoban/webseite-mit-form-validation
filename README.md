@@ -53,10 +53,10 @@ Um Nachrichten zu versenden, wird **PHP-Mailer** verwendet. Dieser sorgt dafür,
 
 6. **SMTP-Konfiguration anpassen:**
    
-   **SMTP-Benutzername:** Öffne die Datei `username.php` und trage deinen SMTP-Benutzernamen ein.<br>
-   **SMTP-Passwort:** Öffne die Datei `password.php` und trage dein SMTP-Passwort ein.<br>
-   **SMTP-Server und Port:** Überprüfe, ob der SMTP-Server (z. B. `smtp.gmail.com`) und der Port (z. B. `587`) korrekt sind.<br>
-   *Hinweis:* Wenn du Gmail verwendest, aktiviere die 2-Faktor-Authentifizierung und erstelle ein App-Passwort für den Zugriff auf dein Konto.<br>
+   Öffne die Datei `username.php` und trage deinen SMTP-Benutzernamen ein.
+   Öffne die Datei `password.php` und trage dein SMTP-Passwort ein.
+   Überprüfe, ob der SMTP-Server (z. B. `smtp.gmail.com`) und der Port (z. B. `587`) korrekt sind.
+   *Hinweis:* Wenn du Gmail verwendest, aktiviere die 2-Faktor-Authentifizierung und erstelle ein App-Passwort für den Zugriff auf dein Konto.
 
 7. **Projekt testen:**
 
