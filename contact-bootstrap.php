@@ -170,30 +170,7 @@ $_SESSION['alertPolicy'] = '';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script>
-        $("#contactForm").validate({
-            rules: {
-                email: {
-                    required: true,
-                    email: true,
-                },
-                message: {
-                    required: true,
-                },
-                privacyPolicy: {
-                    required: true,
-                }
-            },
-            messages: {
-                email: "Bitte eine gültige Email eingeben.",
-                message: "Nachricht darf nicht leer sein.",
-                privacyPolicy: "Bitte akzeptieren Sie die Datenschutzerklärung."
-            },
-            submitHandler: function(form) {
-                form.submit(); //Formular senden
-            }
-        });
-    </script>
+    <script src="jquery-validate.js"></script>
 
 </body>
 
