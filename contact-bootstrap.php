@@ -1,15 +1,16 @@
 <?php
 session_start();
 
-
+#leere Strings initialisieren, als default um undefined zu verhindern
 $alertEmail = '';
 $alertMessage = '';
 $alertPolicy = '';
 $messageValue = '';
 $emailValue = '';
 $checked = '';
-$alertRecaptcha = '';
 
+
+#Fehlermeldungen abfangen und in Variablen speichern
 if (isset($_SESSION['alertEmail'])) {
     $alertEmail = $_SESSION['alertEmail'];
 }
@@ -18,9 +19,11 @@ if (isset($_SESSION['alertMessage'])) {
     $alertMessage = $_SESSION['alertMessage'];
 }
 
-if (!isset($_POST['privacyPolicy'])) {
+if (isset($_SESSION['alertPolicy'])) {
     $alertPolicy = $_SESSION['alertPolicy'];
 }
+
+#Speichern der Eingaben, damit Sie nicht verloren gehen
 if (isset($_SESSION['privacyPolicy'])) {
     $checked = $_SESSION['privacyPolicy'];
 }
@@ -30,12 +33,9 @@ if (isset($_SESSION['emailValue'])) {
 if (isset($_SESSION['messageValue'])) {
     $messageValue = $_SESSION['messageValue'];
 }
-if (isset($_SESSION['alertRecaptcha'])) {
-    $alertRecaptcha = $_SESSION['alertRecaptcha'];
-}
 
 session_unset();
-$_SESSION['alertPolicy'] = '';
+
 
 ?>
 
@@ -56,7 +56,7 @@ $_SESSION['alertPolicy'] = '';
     <link
         href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lobster&family=Mouse+Memoirs&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Quicksand:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
         rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -105,7 +105,7 @@ $_SESSION['alertPolicy'] = '';
                         <label class="form-check-label text-break mb-2" for="privacyPolicy">*Ich stimme der <a class="policy" style="color: white; text-decoration : none;" href="policy.php">Datenschutzerklärung</a>
                             zu</label>
                         <?= $alertPolicy; ?>
-                        <?= $alertRecaptcha; ?>
+                      
                     </div>
 
                     <button type="submit" class="btn btn-primary " name="submit" id="submit">senden</button>
@@ -170,7 +170,7 @@ $_SESSION['alertPolicy'] = '';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="jquery-validate.js"></script>
+   <!-- <script src="jquery-validate.js"></script>-->
 
 </body>
 
