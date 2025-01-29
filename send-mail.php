@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
         '<div class="alert alert-danger text-break text-center  m-0" role="alert">Falsche E-Mail-Formatierung!</div>',
         '<div class="alert alert-danger text-break text-center  m-0" role="alert">Nachricht ist ein Pflichtfeld!</div>',
         '<div class="alert alert-danger text-break text-center  m-0" role="alert">Datenschutz ist ein Pflichtfeld!</div>',
-         '<div class="alert alert-danger text-break text-center  m-0" role="alert">Recaptcha ist ein Pflichtfeld!</div>'
+        
     ];
    
     if (empty($email)) {
@@ -122,7 +122,7 @@ if (isset($_POST['submit'])) {
             echo '
             <div class="d-grid col-12 mx-auto "><a class="btn btn-dark text-break  role="button"  href="contact-bootstrap.php">zurück</a></div>';
             session_unset();
-            $_SESSION['alertPolicy'] = '';
+           
         } catch (Exception $e) {
             echo "Nachricht konnte nicht gesendet werden. Fehler: {$mail->ErrorInfo}";
         }
