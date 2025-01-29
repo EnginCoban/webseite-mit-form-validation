@@ -105,7 +105,7 @@ session_unset();
                         <label class="form-check-label text-break mb-2" for="privacyPolicy">*Ich stimme der <a class="policy" style="color: white; text-decoration : none;" href="policy.php">Datenschutzerklärung</a>
                             zu</label>
                         <?= $alertPolicy; ?>
-                      
+
                     </div>
 
                     <button type="submit" class="btn btn-primary " name="submit" id="submit">senden</button>
@@ -170,7 +170,7 @@ session_unset();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-   <!-- <script src="jquery-validate.js"></script>-->
+    <script src="jquery-validate.js"></script>
 
 </body>
 
