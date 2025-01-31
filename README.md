@@ -2,11 +2,24 @@
 
 ## Projektbeschreibung
 
-Dieses Programm enthält eine farblich abgestimmte Webseite, die responsiv mit dem Bootstrap-Framework gestaltet wurde. Die Seite nutzt verschiedene CSS-Stile und enthält Bilder, um das Design zu bereichern.
+Dieses Programm enthält eine farblich abgestimmte Webseite, die **responsiv** mit dem **Bootstrap-Framework** gestaltet wurde.
 
-Ein zentrales Feature der Webseite ist ein Kontaktformular (`contact.php`), das eine Formular-Validierung mit jQuery und PHP implementiert. Dabei wird das Formular sowohl clientseitig (mit jQuery) als auch serverseitig (mit PHP) validiert, um sicherzustellen, dass alle Eingaben korrekt sind.
+Ein **zentrales Feature** der Webseite ist ein Kontaktformular (`contact.php`), das eine **zweistufige Validierung** implementiert:  
 
-Um Nachrichten zu versenden, wird **PHP-Mailer** verwendet. Dieser sorgt dafür, dass die über das Kontaktformular abgeschickte Nachricht per E-Mail an den definierten Empfänger gesendet wird. Es werden **SMTP-Einstellungen** benötigt, um die E-Mail-Zustellung zu ermöglichen.
+- **Clientseitige Validierung**  
+
+  Über das *jQuery Validation Plugin* ([jquery-validate.js](jquery-validate.js)) erhalten Nutzer direktes Feedback zu:  
+  - Pflichtfeldern (E-Mail, Nachricht, Datenschutzerklärung)  
+  - Korrektem E-Mail-Format  
+
+- **Serverseitige Validierung** ([send-mail.php](send-mail.php))  
+  - Eingabesäuberung mit PHP-Filtern (`FILTER_SANITIZE_EMAIL`, `FILTER_SANITIZE_SPECIAL_CHARS`)
+  - Prüfen des E-Mail-Formats (`FILTER_VALIDATE_EMAIL`)   
+  - Schutz vor Header-Injection durch Regex-Filterung von Zeilenumbrüchen
+  - Benutzereingaben in der E-Mail mit `htmlspecialchars()` schützen 
+  - Session-basierte Fehlerbehandlung für dauerhaft gepspeicherte Eingaben und Meldungen
+
+Nach erfolgreicher Validierung wird die Nachricht über **PHPMailer mit SMTP** versendet. Die dafür erforderlichen SMTP-Zugangsdaten sind in externen Includes (`username.php`, `password.php`) ausgelagert.
 
 ## Features
 
@@ -61,6 +74,6 @@ Um Nachrichten zu versenden, wird **PHP-Mailer** verwendet. Dieser sorgt dafür,
 7. **Projekt testen:**
 
    Öffne `contact.php` in deinem Browser, um das Kontaktformular anzuzeigen.
-   Fülle das Formular aus und klicke auf "Senden".
+   Fülle das Formular aus und klicke auf "senden".
    Nach korrekter Validierung wird die Nachricht über PHP-Mailer an den definierten Empfänger gesendet.
    
