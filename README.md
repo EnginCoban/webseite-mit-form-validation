@@ -1,4 +1,4 @@
-# Webseite mit Formular-Validation
+# Webseite mit Formular-Validierung
 
 ## Projektbeschreibung
 
