@@ -426,33 +426,5 @@ footer>a:hover {
 
 
 
-#port {
-    background-image: url(images/portfolio-backgr.jpg);
-}
 
-.menu-item-portfolio {
-    background: black;
-    color: white;
 
-}
-
-.menü {
-    list-style: none;
-    padding-left: 0px;
-
-}
-
-.menü>li>a {
-    text-decoration: none;
-    color: white;
-
-}
-
-.menü>li {
-    border-top: 1px solid white;
-    padding: 20px;
-}
-
-.menü>li>a:hover {
-    color: yellow;
-}
